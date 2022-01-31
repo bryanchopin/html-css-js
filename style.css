@@ -1,0 +1,193 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    margin: 10px auto;
+    border: 1px solid;
+    border-radius: 10px;
+    }
+
+header{
+    width: auto;
+    height: 100px;
+    padding: 20px;
+    margin: 10px;
+    display: block;
+    border: 3px solid;
+    border-radius: 10px;
+    background-color: rgb(36, 34, 34);
+}
+
+header h1{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(58, 93, 122);
+    width: auto;
+    height: 70px;
+    padding: 20px;
+    margin: 10px auto;
+    border: 3px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    float: left;
+    width: auto;
+    list-style: none;
+    margin: auto 20px;
+    line-height: 30px;
+}
+
+nav ul li a{
+    background-color: black;
+    padding: 10px;
+    line-height: 10px;
+    color: aliceblue;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#content{
+    float: left;
+    background-color: rgb(70, 62, 62);
+    width: calc(80% - 50px);
+    height: 500px;
+    padding: 20px;
+    margin: 10px auto;
+    display: flex ;
+    flex-wrap: wrap;
+    border: 3px solid;
+    border-radius: 10px;
+}
+
+#content article{
+    background-color: aliceblue;
+    width: auto;
+    height: 120px;
+    padding: 20px;
+    margin: auto 20px;
+    flex: 1 1 150px;
+    border: 4px solid;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+ #content article h2{
+     color: black;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: small;
+     text-align: center;
+ }
+
+aside{
+    float: left;
+    background-color: black;
+    width: 20%;
+    height: 500px;
+    margin: auto 20px;
+    border: 3px solid rgb(67, 67, 119);
+    border-radius: 10px;
+}
+aside input{
+    text-align: center;
+    margin: auto;
+}
+
+footer{
+    background-color: rgb(36, 25, 25);
+    width: auto;
+    height: 40px;
+    margin: 20px;
+    padding: 30px;
+    border: 3px solid;
+    border-radius: 10px;
+}
+
+footer p {
+    color: aliceblue;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 907px) {
+    body {
+      background-color: blue;
+    }
+    nav ul li{
+        display: none;
+    }
+    #content{
+        float: none;
+        width: auto;
+    }
+    aside{
+        float: none;
+        width: auto;
+    }
+
+
+  }
+
+/* .container p:first-of-type{
+        color: red;
+        font-size: 1.5em;
+    } */
+
+
+/*
+.container p{
+    width: auto;
+    height: auto;
+    padding: 40px;
+    border: 5px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.containerr{
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex ;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.overflow{
+    width: 100px;
+    height: 120px;
+    padding: 10px;
+    margin: auto;
+    border: 4px solid;
+    overflow: auto;
+}
+
+
+    /* ESTA DECLARACION COLOCA EL FONDO SI ES UN HIJO DEL ELEMENTO HTML */
+    /* p:nth-child(even) {
+        background: floralwhite;
+        }
+
+    p:hover {
+        outline: 10px dotted green;
+        }
+  /* */  
